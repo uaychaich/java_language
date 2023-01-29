@@ -1,3 +1,7 @@
+/*
+ * Author: Uaychai Chotjaratwanich
+ * Modified Date: 2023-01-29
+ */
 public class App {
     public static void main(String[] args) throws Exception {
         byte a1 = 100;System.out.println(a1);
@@ -8,5 +12,7 @@ public class App {
         double a6 = 100.00;System.out.println(a6);
         char a7 = 'a';System.out.println(a7);
         String a8 = "Uaychai";System.out.println(a8);
+        boolean a9 = true;System.out.println(a9);
+        var a10 = "Yoda";System.out.println(a10);
     }
 }

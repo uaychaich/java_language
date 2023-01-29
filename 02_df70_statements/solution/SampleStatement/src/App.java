@@ -1,5 +1,3 @@
-import java.io.Console;
-
 /*
  * Author: Uaychai Chotjaratwanich
  * Modified Date: 2023-01-28

@@ -2,7 +2,7 @@ import java.text.MessageFormat;
 
 /*
  * Author: Uaychai Chotjaratwanich
- * Modified Date: 2023-01-29
+ * Modified Date: 2023-01-30
  */
 public class App {
     public static void main(String[] args) throws Exception {
@@ -78,5 +78,13 @@ public class App {
         System.out.println(j2);
         j2 = MessageFormat.format("j2 is {0,number,#,###.0000}", j1);
         System.out.println(j2);
+
+        //Extract Data from array
+        int[] k1 = new int[]{10,20,30};
+        System.out.println("Extract Data from array");
+        int k2 = k1.length;System.out.println(k2);
+        int[][] k3 = new int[][]{{10,20,30},{40,50,60}};
+        int k4 = k3.length;System.out.println(k4);
+        int k5 = k3[0].length;System.out.println(k5);
     }
 }

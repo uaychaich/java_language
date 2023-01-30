@@ -1,6 +1,6 @@
 /*
  * Author: Uaychai Chotjaratwanich
- * Modified Date: 2023-01-29
+ * Modified Date: 2023-01-30
  */
 public class App {
     public static void main(String[] args) throws Exception {
@@ -42,5 +42,35 @@ public class App {
             default: monthname = "Invalid month";break;
         }
         System.out.println(monthname);
+
+        //while statement
+        System.out.println("while statement");
+        int e1=0; while(e1<5){System.out.println(e1);e1++;}
+
+        //do-while statement
+        System.out.println("do-while statement");
+        int f1=0; do{System.out.println(f1);f1++;}while(f1<5);
+
+        //for statement
+        System.out.println("for statement");
+        for(int g1=0;g1<5;g1++){System.out.println(g1);}
+
+        //for with array
+        System.out.println("for with array");
+        int[] h1 = new int[]{10,20,30,40,50};
+        for(int h2=0;h2<5;h2++){System.out.println(h1[h2]);}
+
+        //for-each statement
+        System.out.println("for-each statement");
+        int[] i1 = new int[]{10,20,30,40,50};
+        for(int item : i1){System.out.println(item);}
+
+        //break continue statement
+        System.out.println("break continue statement");
+        for(int j1=0;j1<7;j1++){
+            if(j1==3){continue;}
+            if(j1==5){break;}
+            System.out.println(j1);
+        }
     }
 }

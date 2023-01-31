@@ -1,6 +1,6 @@
 /*
  * Author: Uaychai Chotjaratwanich
- * Modified Date: 2023-01-30
+ * Modified Date: 2023-01-31
  */
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,23 +25,86 @@ public class App {
 
         //switch statement
         System.out.println("switch statement");
-        int monthnum = 5; String monthname;
+        int monthnum = 5; String quartername;
         switch (monthnum) {
-            case 1:  monthname = "January";break;
-            case 2:  monthname = "February";break;
-            case 3:  monthname = "March";break;
-            case 4:  monthname = "April";break;
-            case 5:  monthname = "May";break;
-            case 6:  monthname = "June";break;
-            case 7:  monthname = "July";break;
-            case 8:  monthname = "August";break;
-            case 9:  monthname = "September";break;
-            case 10: monthname = "October";break;
-            case 11: monthname = "November";break;
-            case 12: monthname = "December";break;
-            default: monthname = "Invalid month";break;
+            case 1:  quartername = "Q1";break;
+            case 2:  quartername = "Q1";break;
+            case 3:  quartername = "Q1";break;
+            case 4:  quartername = "Q2";break;
+            case 5:  quartername = "Q2";break;
+            case 6:  quartername = "Q2";break;
+            case 7:  quartername = "Q3";break;
+            case 8:  quartername = "Q3";break;
+            case 9:  quartername = "Q3";break;
+            case 10: quartername = "Q4";break;
+            case 11: quartername = "Q4";break;
+            case 12: quartername = "Q4";break;
+            default: quartername = "Invalid month";break;
         }
-        System.out.println(monthname);
+        System.out.println(quartername);
+
+        //switch statement 2
+        System.out.println("switch statement 2");
+        switch (monthnum) {
+            case 1:  
+            case 2:  
+            case 3:  quartername = "Q1";break;
+            case 4:  
+            case 5:  
+            case 6:  quartername = "Q2";break;
+            case 7:  
+            case 8:  
+            case 9:  quartername = "Q3";break;
+            case 10: 
+            case 11: 
+            case 12: quartername = "Q4";break;
+            default: quartername = "Invalid month";break;
+        }
+        System.out.println(quartername);
+
+        //switch statement 3
+        System.out.println("switch statement 3");
+        switch (monthnum) {
+            case 1,2,3:  quartername = "Q1";break;
+            case 4,5,6:  quartername = "Q2";break;
+            case 7,8,9:  quartername = "Q3";break;
+            case 10,11,12: quartername = "Q4";break;
+            default: quartername = "Invalid month";break;
+        }
+        System.out.println(quartername);
+
+        //switch statement 4
+        System.out.println("switch statement 4");
+        switch (monthnum) {
+            case 1,2,3 ->  quartername = "Q1";
+            case 4,5,6 -> quartername = "Q2";
+            case 7,8,9 ->  quartername = "Q3";
+            case 10,11,12 ->  quartername = "Q4";
+            default -> quartername = "Invalid month";
+        }
+        System.out.println(quartername);
+
+        //switch statement 5
+        System.out.println("switch statement 5");
+        quartername = switch (monthnum) {
+            case 1,2,3 ->  "Q1";
+            case 4,5,6 ->  "Q2";
+            case 7,8,9 ->  "Q3";
+            case 10,11,12 ->  "Q4";
+            default -> "Invalid month";
+        };
+        System.out.println(quartername);
+
+        //switch statement 6
+        System.out.println("switch statement 6");
+        quartername = switch (monthnum) {
+            case 1,2,3 : System.out.println("Q1"); yield "Q1";
+            case 4,5,6 : System.out.println("Q2"); yield "Q2";
+            case 7,8,9 : System.out.println("Q3"); yield "Q3";
+            case 10,11,12 : System.out.println("Q4"); yield "Q4";
+            default : System.out.println("Invalid month"); yield "Invalid month";
+        };
+        System.out.println(quartername);
 
         //while statement
         System.out.println("while statement");

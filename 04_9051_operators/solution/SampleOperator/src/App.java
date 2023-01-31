@@ -2,7 +2,7 @@ import java.text.MessageFormat;
 
 /*
  * Author: Uaychai Chotjaratwanich
- * Modified Date: 2023-01-30
+ * Modified Date: 2023-01-31
  */
 public class App {
     public static void main(String[] args) throws Exception {
@@ -48,6 +48,8 @@ public class App {
         System.out.println(e1-- + 1);System.out.println(e1);
         e1=1;
         System.out.println(--e1 + 1);System.out.println(e1);
+        e1=1;e1+=5;System.out.println(e1);
+        e1=1;e1-=5;System.out.println(e1);
 
         //Convert Whole Number to Decimal Number
         int f1=5; double f2;

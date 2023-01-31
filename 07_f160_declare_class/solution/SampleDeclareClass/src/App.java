@@ -2,10 +2,14 @@ import java.text.MessageFormat;
 
 /*
  * Author: Uaychai Chotjaratwanich
- * Modified Date: 2023-01-30
+ * Modified Date: 2023-01-31
  */
 public class App {
     public static void main(String[] args) throws Exception {
+        //before class
+        int APersonID=1; String AFullName="Uaychai";double ASalary=5000;
+        int BPersonID=2; String BFullName="Yoda";double BSalary=7000;
+        int CPersonID=APersonID; String CFullName=AFullName; double CSalary=ASalary;
 
         //individual
         System.out.println("individual");
@@ -22,6 +26,7 @@ public class App {
         System.out.println(MessageFormat.format("{0} {1} {2}", p3.PersonID,p3.FullName,p3.Salary));
 
         //reference data
+        System.out.println("reference data");
         p1.Salary = 8000;
         System.out.println(MessageFormat.format("{0} {1} {2}", p3.PersonID,p3.FullName,p3.Salary));
     }

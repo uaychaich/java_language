@@ -1,3 +1,7 @@
+/*
+ * Author: Uaychai Chotjaratwanich
+ * Modified Date: 2023-02-01
+ */
 public class Class1_2 extends Class1 {
     //field
     public int field2;
